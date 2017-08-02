@@ -1,0 +1,17 @@
+{
+  "name": "CordovaClipboard",
+  "version": "1.0.0",
+  "description": "Clipboard",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HootsuiteLabs/CordovaClipboard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HootsuiteLabs/CordovaClipboard/issues"
+  },
+  "homepage": "https://github.com/HootsuiteLabs/CordovaClipboard#readme"
+}
