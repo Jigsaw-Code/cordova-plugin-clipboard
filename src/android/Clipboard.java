@@ -14,14 +14,14 @@ import android.content.ClipDescription;
 
 public class Clipboard extends CordovaPlugin {
 
-    private static final String actionCopy = "copy";
-    private static final String actionPaste = "paste";
+    private static final String ACTION_COPY = "copy";
+    private static final String ACTION_PASTE = "paste";
 
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
         ClipboardManager clipboard = (ClipboardManager) cordova.getActivity().getSystemService(Context.CLIPBOARD_SERVICE);
 
-        if (action.equals(actionCopy)) {
+        if (ACTION_COPY.equals(action)) {
             try {
                 String text = args.getString(0);
                 ClipData clip = ClipData.newPlainText("Text", text);
@@ -36,11 +36,7 @@ public class Clipboard extends CordovaPlugin {
             } catch (Exception e) {
                 callbackContext.sendPluginResult(new PluginResult(PluginResult.Status.ERROR, e.toString()));
             }
-        } else if (action.equals(actionPaste)) {
-            if (!clipboard.getPrimaryClipDescription().hasMimeType(ClipDescription.MIMETYPE_TEXT_PLAIN)) {
-                callbackContext.sendPluginResult(new PluginResult(PluginResult.Status.NO_RESULT));
-            }
-
+        } else if (ACTION_PASTE.equals(action)) {
             try {
                 ClipData.Item item = clipboard.getPrimaryClip().getItemAt(0);
                 String text = item.getText().toString();
@@ -54,9 +50,6 @@ public class Clipboard extends CordovaPlugin {
                 callbackContext.sendPluginResult(new PluginResult(PluginResult.Status.ERROR, e.toString()));
             }
         }
-
         return false;
     }
 }
-
-
