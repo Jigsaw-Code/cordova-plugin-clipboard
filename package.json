@@ -1,17 +1,12 @@
 {
-  "name": "CordovaClipboard",
-  "version": "1.0.0",
-  "description": "Clipboard",
-  "main": "index.js",
+  "name": "cordova-plugin-clipboard",
+  "version": "1.1.0",
+  "description": "Clipboard management plugin for Cordova",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HootsuiteLabs/CordovaClipboard.git"
+    "url": "git+https://github.com/Jigsaw-Code/outline-cordova-plugin-clipboard.git"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/HootsuiteLabs/CordovaClipboard/issues"
-  },
-  "homepage": "https://github.com/HootsuiteLabs/CordovaClipboard#readme"
+  "license": "MIT"
 }
