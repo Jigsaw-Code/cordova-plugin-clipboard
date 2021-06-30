@@ -4,7 +4,7 @@
   "description": "Clipboard management plugin for Cordova",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Jigsaw-Code/outline-cordova-plugin-clipboard.git"
+    "url": "git+https://github.com/Jigsaw-Code/cordova-plugin-clipboard.git"
   },
   "keywords": [],
   "author": "",
